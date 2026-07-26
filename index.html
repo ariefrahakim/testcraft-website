@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TestCraft Indonesia — Quality Software. Confident Delivery.</title>
-<meta name="description" content="TestCraft Indonesia — perusahaan pelatihan IT untuk Software Testing, QA Automation, API & Performance Testing, dan AI for QA. WhatsApp +62 823-9556-8743">
+<meta name="description" content="TestCraft Indonesia — perusahaan pelatihan IT untuk Software Testing, QA Automation, API & Performance Testing, dan AI for QA. QA Bootcamp, public & corporate training.">
+<link rel="canonical" href="https://ariefrahakim.github.io/testcraft-compro/">
+<meta name="theme-color" content="#0E9C9C">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TestCraft Indonesia">
+<meta property="og:title" content="TestCraft Indonesia — Quality Software. Confident Delivery.">
+<meta property="og:description" content="Pelatihan Software Testing & QA Engineering: public training, corporate training, sertifikasi, dan QA Bootcamp.">
+<meta property="og:url" content="https://ariefrahakim.github.io/testcraft-compro/">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 5 L55 13 V30 C55 45 44 55 32 59 C20 55 9 45 9 30 V13 Z' fill='none' stroke='%2316607C' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M20 31 L30 41 L48 19' fill='none' stroke='%230E9C9C' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){try{document.documentElement.dataset.theme=localStorage.getItem("tcw_theme")||"light"}catch(e){}})();</script>
 <style>
 :root{
   --blue:#0E9C9C; --blue-dark:#0B7E7E; --blue-light:#D5EFEE;
@@ -152,128 +165,79 @@ footer a:hover{color:#fff}
 .register-section::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.3),transparent 60%);top:-150px;right:-100px}
 .register-form{background:#fff;border-radius:18px;padding:30px;color:var(--navy);position:relative;z-index:2}
 html[data-theme="dark"] .register-form{background:var(--card);color:var(--text)}
-.register-form input,.register-form select{margin-bottom:14px}
+.register-form .field:last-of-type{margin-bottom:16px}
+.register-form textarea{resize:vertical;min-height:62px}
 .wa-btn{background:#25D366;color:#fff;width:100%;justify-content:center}
 .wa-btn:hover{filter:brightness(1.06)}
-/* DASHBOARD LAYOUT */
-.dash{display:grid;grid-template-columns:240px 1fr;min-height:calc(100vh - 68px)}
-.dash-side{background:var(--card);border-right:1px solid var(--border);padding:24px 14px;position:sticky;top:68px;height:calc(100vh - 68px);overflow-y:auto}
-.dash-side a{display:flex;align-items:center;gap:11px;padding:11px 14px;border-radius:11px;font-size:14px;font-weight:500;color:var(--text-2);margin-bottom:3px}
-.dash-side a:hover{background:var(--bg)}
-.dash-side a.active{background:var(--blue-light);color:var(--blue);font-weight:600}
-.dash-main{padding:32px;max-width:1160px}
-.kpi{display:flex;flex-direction:column;gap:6px}
-.kpi .k-ic{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:6px}
-.kpi .k-val{font-family:'Poppins';font-size:26px;font-weight:700}
-.kpi .k-delta{font-size:12px;font-weight:600}
-.up{color:var(--green)}.down{color:var(--red)}
-.welcome-banner{background:var(--grad);color:#fff;border-radius:20px;padding:32px;display:flex;justify-content:space-between;align-items:center;position:relative;overflow:hidden}
-.welcome-banner::after{content:'🚀';position:absolute;font-size:120px;right:30px;bottom:-25px;opacity:.15}
-table.tbl{width:100%;border-collapse:collapse;font-size:14px}
-table.tbl th{text-align:left;padding:11px 14px;color:var(--text-3);font-size:12px;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)}
-table.tbl td{padding:13px 14px;border-bottom:1px solid var(--border)}
-table.tbl tr:last-child td{border-bottom:none}
-table.tbl tr:hover td{background:var(--bg)}
-/* LEARNING UI */
-.learn{display:grid;grid-template-columns:290px 1fr 320px;min-height:calc(100vh - 68px)}
-.learn-side{background:var(--card);border-right:1px solid var(--border);overflow-y:auto;height:calc(100vh - 68px);position:sticky;top:68px}
-.learn-right{background:var(--card);border-left:1px solid var(--border);height:calc(100vh - 68px);position:sticky;top:68px;display:flex;flex-direction:column}
-.module-h{padding:14px 18px;font-weight:600;font-size:13.5px;background:var(--bg);border-bottom:1px solid var(--border);cursor:pointer;display:flex;justify-content:space-between}
-.lesson{padding:11px 18px;font-size:13.5px;display:flex;gap:10px;align-items:center;cursor:pointer;border-bottom:1px solid var(--border);color:var(--text-2)}
-.lesson:hover{background:var(--bg)}
-.lesson.active{background:var(--blue-light);color:var(--blue);font-weight:600;border-left:3px solid var(--blue)}
-.lesson.done .l-ic{color:var(--green)}
-.player{background:#000;aspect-ratio:16/9;border-radius:16px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.player .play-big{width:76px;height:76px;border-radius:50%;background:rgba(14,156,156,.9);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .2s;border:none}
-.player .play-big:hover{transform:scale(1.1)}
-.player-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:14px 18px;color:#fff;font-size:13px}
-.player-track{height:5px;background:rgba(255,255,255,.25);border-radius:99px;margin-bottom:10px;cursor:pointer}
-.player-track div{height:100%;width:34%;background:var(--blue);border-radius:99px;position:relative}
-.player-track div::after{content:'';position:absolute;right:-6px;top:-4px;width:13px;height:13px;background:#fff;border-radius:50%}
-.tabs{display:flex;border-bottom:1px solid var(--border)}
-.tabs button{flex:1;padding:13px;background:none;border:none;font-weight:600;font-size:13px;color:var(--text-3);border-bottom:2px solid transparent}
-.tabs button.active{color:var(--blue);border-bottom-color:var(--blue)}
-.tab-body{padding:18px;overflow-y:auto;flex:1;font-size:13.5px}
-/* QUIZ */
-.quiz-opt{display:flex;align-items:center;gap:13px;padding:15px 18px;border:1.5px solid var(--border);border-radius:13px;cursor:pointer;margin-bottom:11px;transition:all .15s;background:var(--card)}
-.quiz-opt:hover{border-color:var(--blue)}
-.quiz-opt.sel{border-color:var(--blue);background:var(--blue-light)}
-.quiz-opt.correct{border-color:var(--green);background:var(--green-light)}
-.quiz-opt.wrong{border-color:var(--red);background:#FEE2E2}
-html[data-theme="dark"] .quiz-opt.wrong{background:#7F1D1D33}
-.quiz-opt .oL{width:30px;height:30px;border-radius:9px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
-.timer{font-family:'Poppins';font-weight:700;font-size:18px;color:var(--blue)}
-/* CERTIFICATE */
-.cert{background:linear-gradient(135deg,#fff,#F0F7FF);border:2px solid var(--blue);border-radius:20px;padding:44px;text-align:center;position:relative;color:#12283E;max-width:680px;margin:0 auto}
-html[data-theme="dark"] .cert{background:linear-gradient(135deg,#111A2E,#0F1E3D);color:#F1F5F9}
-.cert::before{content:'';position:absolute;inset:10px;border:1px solid var(--blue-light);border-radius:14px;pointer-events:none}
-.qr{display:grid;grid-template-columns:repeat(11,7px);grid-auto-rows:7px;gap:1px;padding:8px;background:#fff;border:1px solid var(--border);border-radius:8px;width:max-content;margin:0 auto}
-.qr i{background:#12283E;border-radius:1px}
-/* CHAT */
-.ai-fab{position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:var(--grad-accent);color:#fff;font-size:26px;border:none;box-shadow:0 10px 30px rgba(14,156,156,.4);z-index:200;transition:transform .2s}
-.ai-fab:hover{transform:scale(1.08)}
-.ai-panel{position:fixed;bottom:100px;right:26px;width:360px;height:480px;background:var(--card);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow-lg);z-index:200;display:flex;flex-direction:column;overflow:hidden}
-.ai-head{background:var(--grad);color:#fff;padding:16px 20px}
-.ai-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
-.ai-msg{max-width:82%;padding:10px 14px;border-radius:14px;font-size:13.5px}
-.ai-msg.bot{background:var(--bg);border:1px solid var(--border);align-self:flex-start;border-bottom-left-radius:4px}
-.ai-msg.user{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-/* MODAL */
-.modal-bg{position:fixed;inset:0;background:rgba(15,23,42,.6);backdrop-filter:blur(4px);z-index:300;display:flex;align-items:center;justify-content:center;padding:20px}
-.modal{background:var(--card);border-radius:20px;max-width:460px;width:100%;padding:30px;box-shadow:var(--shadow-lg);max-height:90vh;overflow-y:auto}
 /* TOAST */
 .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:13px 24px;border-radius:12px;font-size:14px;font-weight:500;z-index:400;box-shadow:var(--shadow-lg);animation:pop .3s}
 @keyframes pop{from{opacity:0;transform:translateX(-50%) translateY(16px)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .fade-up{animation:fadeUp .5s ease both}
-/* leaderboard */
-.lb-row{display:flex;align-items:center;gap:13px;padding:11px 0;border-bottom:1px solid var(--border)}
-.lb-row:last-child{border:none}
-.lb-rank{width:28px;height:28px;border-radius:8px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
-.lb-row.top1 .lb-rank{background:#FEF3C7;color:#B45309}
-.lb-row.top2 .lb-rank{background:#E2E8F0;color:#475569}
-.lb-row.top3 .lb-rank{background:#FFEDD5;color:#C2410C}
-/* filters */
-.filter-group{margin-bottom:22px}
-.filter-group h4{font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:10px}
-.check{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:14px;cursor:pointer;color:var(--text-2)}
-.check input{width:16px;height:16px;padding:0;accent-color:var(--blue)}
 /* curriculum */
 .curr-mod{border:1px solid var(--border);border-radius:13px;margin-bottom:12px;overflow:hidden}
 .curr-mod summary{padding:16px 20px;background:var(--bg);font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;font-size:14.5px}
 .curr-lesson{padding:12px 20px;border-top:1px solid var(--border);font-size:14px;display:flex;justify-content:space-between;color:var(--text-2)}
+/* A11Y */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:500;background:var(--blue);color:#fff;padding:12px 20px;border-radius:0 0 10px 0;font-weight:600}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+/* FORM VALIDATION */
+.field{margin-bottom:14px}
+.req{color:var(--red)}
+.hint{font-size:12px;color:var(--text-3);margin-top:5px}
+.err-msg{display:none;font-size:12px;font-weight:600;color:var(--red);margin-top:5px}
+.field.invalid input,.field.invalid select{border-color:var(--red)}
+.field.invalid .err-msg{display:block}
+.consent{display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--text-2);font-weight:400;line-height:1.5;margin-bottom:14px}
+.consent input{width:17px;height:17px;padding:0;margin-top:1px;flex-shrink:0;accent-color:var(--blue)}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.btn[disabled]{opacity:.6;cursor:not-allowed;pointer-events:none}
+.spin{width:15px;height:15px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* MOBILE NAV */
+.nav-toggle{display:none}
+.nav-drawer{display:none;border-top:1px solid var(--border);background:var(--card);padding:10px 24px 16px}
+.nav-drawer.open{display:block}
+.nav-drawer a{display:block;padding:11px 12px;border-radius:10px;font-size:15px;font-weight:500;color:var(--text-2)}
+.nav-drawer a:hover{background:var(--blue-light);color:var(--blue)}
 /* responsive */
-.catalog-layout{display:grid;grid-template-columns:250px 1fr;gap:28px;align-items:start}
-.catalog-side{position:sticky;top:88px}
 @media(max-width:1024px){
-  .catalog-layout{grid-template-columns:1fr}
-  .catalog-side{position:static}
   .g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}
-  .cat-grid{grid-template-columns:repeat(3,1fr)}
   .hero-inner{grid-template-columns:1fr;padding:60px 24px 80px}
   .hero h1{font-size:38px}
-  .learn{grid-template-columns:260px 1fr}
-  .learn-right{display:none}
   .register-section{grid-template-columns:1fr;padding:36px}
-  .dash{grid-template-columns:1fr}
-  .dash-side{display:none}
+}
+@media(max-width:1120px){
+  .nav-toggle{display:inline-flex}
 }
 @media(max-width:640px){
   .g2,.g3,.g4{grid-template-columns:1fr}
-  .cat-grid{grid-template-columns:repeat(2,1fr)}
   .stats-band .card{grid-template-columns:repeat(2,1fr)}
-  .nav-links{display:none}
   .hero h1{font-size:31px}
-  .learn{grid-template-columns:1fr}
-  .learn-side{display:none}
   .section-title{font-size:24px}
+  .register-section{padding:26px 20px}
+  .nav-cta{display:none}
+  .nav-inner{gap:8px;padding:0 16px}
+  .logo{font-size:17px}
+  .logo .sub{display:none}
+  .logo .shield{width:34px;height:34px}
+  .nav-drawer{padding:10px 16px 16px}
+  .container{padding:0 18px}
+}
+@media(max-width:400px){
+  .nav-inner .btn-sm{padding:8px 12px}
 }
 ::-webkit-scrollbar{width:9px;height:9px}
 ::-webkit-scrollbar-thumb{background:var(--text-3);border-radius:99px}
 ::-webkit-scrollbar-track{background:transparent}
 </style>
 <style>
-#salary-grid,#usp-grid{grid-template-columns:repeat(5,1fr)}
+#salary-grid,#usp-grid{grid-template-columns:repeat(5,1fr);gap:14px}
 @media(max-width:1024px){#salary-grid,#usp-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){#salary-grid,#usp-grid{grid-template-columns:1fr}}
 section[id]{scroll-margin-top:84px}
@@ -284,21 +248,28 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="nav-inner">
-  <a class="logo" href="#home"><span class="shield"><svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tcg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A5C"/><stop offset=".55" stop-color="#16607C"/><stop offset="1" stop-color="#0E9C9C"/></linearGradient></defs><path d="M32 5 L55 13 V30 C55 45 44 55 32 59 C20 55 9 45 9 30 V13 Z" fill="none" stroke="url(#tcg)" stroke-width="5" stroke-linejoin="round"/><path d="M20 31 L30 41 L48 19" fill="none" stroke="#0E9C9C" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>TEST</b><span>CRAFT</span> <span style="font-size:12px;font-weight:600;color:var(--text-2)">INDONESIA</span></span></a>
+<a class="skip-link" href="#main" data-i18n="skip">Lompat ke konten utama</a>
+<nav class="topnav" aria-label="Navigasi utama"><div class="nav-inner">
+  <a class="logo" href="#home"><span class="shield"><svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><defs><linearGradient id="tcg-nav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A5C"/><stop offset=".55" stop-color="#16607C"/><stop offset="1" stop-color="#0E9C9C"/></linearGradient></defs><path d="M32 5 L55 13 V30 C55 45 44 55 32 59 C20 55 9 45 9 30 V13 Z" fill="none" stroke="url(#tcg-nav)" stroke-width="5" stroke-linejoin="round"/><path d="M20 31 L30 41 L48 19" fill="none" stroke="#0E9C9C" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>TEST</b><span>CRAFT</span> <span class="sub" style="font-size:12px;font-weight:600;color:var(--text-2)">INDONESIA</span></span></a>
   <div class="nav-links">
-    <a href="#home" data-i18n="nav1">Beranda</a><a href="#layanan" data-i18n="nav2">Layanan</a><a href="#program" data-i18n="nav3">Program</a><a href="#bootcamp" data-i18n="nav8">Bootcamp</a><a href="#tentang" data-i18n="nav4">Tentang Kami</a><a href="#klien" data-i18n="nav5">Klien</a><a href="#faq">FAQ</a><a href="#kontak" data-i18n="nav7">Kontak</a>
+    <a href="#layanan" data-i18n="nav2">Layanan</a><a href="#program" data-i18n="nav3">Program</a><a href="#bootcamp" data-i18n="nav8">Bootcamp</a><a href="#tentang" data-i18n="nav4">Tentang Kami</a><a href="#klien" data-i18n="nav5">Klien</a><a href="#faq">FAQ</a><a href="#kontak" data-i18n="nav7">Kontak</a>
   </div>
   <details class="lang-dd" id="lang-dd">
-    <summary class="icon-btn" style="width:auto;padding:0 10px;font-size:12px;font-weight:700"><span id="lang-flag">🇮🇩</span>&nbsp;<span id="lang-code">ID</span>&nbsp;<span style="font-size:9px">▾</span></summary>
+    <summary class="icon-btn" style="width:auto;padding:0 10px;font-size:12px;font-weight:700" aria-label="Pilih bahasa"><span id="lang-flag">🇮🇩</span>&nbsp;<span id="lang-code">ID</span>&nbsp;<span style="font-size:9px" aria-hidden="true">▾</span></summary>
     <div class="lang-menu">
-      <button onclick="setLangSel('en')">🇬🇧 EN</button>
-      <button onclick="setLangSel('id')">🇮🇩 ID</button>
+      <button type="button" onclick="setLangSel('en')">🇬🇧 EN</button>
+      <button type="button" onclick="setLangSel('id')">🇮🇩 ID</button>
     </div>
   </details>
-  <button class="icon-btn" onclick="toggleTheme()" title="Toggle theme" id="theme-btn">🌙</button>
-  <a class="btn btn-primary btn-sm" href="https://ariefrahakim.github.io/testcraft-lms/" target="_blank">🎓 LMS Portal ↗</a>
+  <button class="icon-btn" type="button" onclick="toggleTheme()" title="Ganti tema terang/gelap" aria-label="Ganti tema terang/gelap" id="theme-btn">🌙</button>
+  <a class="btn btn-outline btn-sm nav-cta" href="https://ariefrahakim.github.io/testcraft-lms/" target="_blank" rel="noopener">LMS Portal ↗</a>
+  <a class="btn btn-primary btn-sm" href="#kontak" data-i18n="navreg">Daftar</a>
+  <button class="icon-btn nav-toggle" type="button" id="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="nav-drawer" aria-label="Buka menu navigasi">☰</button>
+</div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#layanan" data-i18n="nav2">Layanan</a><a href="#program" data-i18n="nav3">Program</a><a href="#bootcamp" data-i18n="nav8">Bootcamp</a><a href="#tentang" data-i18n="nav4">Tentang Kami</a><a href="#klien" data-i18n="nav5">Klien</a><a href="#faq">FAQ</a><a href="#kontak" data-i18n="nav7">Kontak</a><a href="https://ariefrahakim.github.io/testcraft-lms/" target="_blank" rel="noopener">LMS Portal ↗</a>
 </div></nav>
+<main id="main">
 
 <section class="hero" id="home"><div class="hero-inner">
   <div>
@@ -306,8 +277,8 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
     <h1 class="mt16">Quality Software.<br><em>Confident Delivery.</em></h1>
     <p data-i18n="hdesc">TestCraft Indonesia adalah perusahaan pelatihan IT yang berfokus pada Software Testing, QA Engineering, Test Automation, API & Performance Testing, AI for QA, dan DevOps for Test Automation.</p>
     <div class="flex mt32 wrap">
-      <a class="btn btn-primary btn-lg" href="#program" data-i18n="cta1">🚀 Lihat Program</a>
-      <a class="btn btn-lg" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20konsultasi%20program%20training!" target="_blank" data-i18n="cta2">💬 Konsultasi Gratis</a>
+      <a class="btn btn-primary btn-lg" href="#program" data-i18n="cta1">Lihat Program</a>
+      <a class="btn btn-lg" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20konsultasi%20program%20training!" target="_blank" data-i18n="cta2">Konsultasi Gratis</a>
     </div>
     <div class="flex mt24 small" style="color:#94A3B8"><span data-i18n="trust">⭐ 4.8/5 rating alumni</span><span>·</span><span>🏢 50+ corporate clients</span></div>
   </div>
@@ -348,10 +319,10 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
 
 <section class="container mt48" id="bootcamp">
   <div style="text-align:center">
-    <span class="badge badge-green" data-i18n="bcbadge">🎓 Program Unggulan · Persiapan Karier hingga Interview</span>
-    <span class="badge badge-blue">🤖 Supported with AI</span>
+    <span class="badge badge-green" data-i18n="bcbadge">Program Unggulan · Persiapan Karier hingga Interview</span>
+    <span class="badge badge-blue">Supported with AI</span>
   </div>
-  <h2 class="section-title mt16" data-i18n="bctitle">Bootcamp Quality Assurance — 24 Minggu</h2>
+  <h2 class="section-title mt16" data-i18n="bctitle">QA Bootcamp</h2>
   <p class="section-sub" data-i18n="bcsub">Program intensif dari nol sampai siap kerja: Manual Testing, API & Database Testing, Web & Mobile Automation, Performance Testing, hingga persiapan karier lengkap sampai latihan interview kerja.</p>
 
   <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bcaudt">Dirancang untuk semua tahap kariermu</h3>
@@ -363,7 +334,7 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
   </div>
 
   <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bcsalt">Prospek Karier & Gaji Profesi QA di Indonesia</h3>
-  <div class="grid mt24" style="grid-template-columns:repeat(5,1fr);gap:14px" id="salary-grid">
+  <div class="grid mt24" id="salary-grid">
     <div class="card" style="text-align:center;padding:18px"><b class="small">QA Manual Tester</b><div class="stat-num" style="font-size:20px">Rp 4–7 jt</div><span class="xs muted" data-i18n="bcpm1">per bulan</span></div>
     <div class="card" style="text-align:center;padding:18px"><b class="small">QA Engineer</b><div class="stat-num" style="font-size:20px">Rp 7–12 jt</div><span class="xs muted" data-i18n="bcpm2">per bulan</span></div>
     <div class="card" style="text-align:center;padding:18px"><b class="small">QA Automation</b><div class="stat-num" style="font-size:20px">Rp 9–16 jt</div><span class="xs muted" data-i18n="bcpm3">per bulan</span></div>
@@ -371,7 +342,7 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
     <div class="card" style="text-align:center;padding:18px"><b class="small">QA Lead</b><div class="stat-num" style="font-size:20px">Rp 15–25 jt</div><span class="xs muted" data-i18n="bcpm5">per bulan</span></div>
   </div>
 
-  <div class="grid mt32" style="grid-template-columns:repeat(5,1fr);gap:14px" id="usp-grid">
+  <div class="grid mt32" id="usp-grid">
     <div class="card" style="text-align:center;padding:18px"><div style="font-size:26px">🔁</div><b class="xs" data-i18n="bcu1">Gratis Mengulang Batch</b></div>
     <div class="card" style="text-align:center;padding:18px"><div style="font-size:26px">🤝</div><b class="xs" data-i18n="bcu2">Persiapan Karier & Interview</b></div>
     <div class="card" style="text-align:center;padding:18px"><div style="font-size:26px">♾️</div><b class="xs" data-i18n="bcu3">Akses Materi Seumur Hidup</b></div>
@@ -379,7 +350,7 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
     <div class="card" style="text-align:center;padding:18px"><div style="font-size:26px">🌐</div><b class="xs" data-i18n="bcu5">Komunitas 28.000+ Alumni</b></div>
   </div>
 
-  <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bccurt">Kurikulum Bootcamp — 24 Minggu</h3>
+  <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bccurt">Kurikulum QA Bootcamp</h3>
   <div class="mt24" style="max-width:860px;margin-left:auto;margin-right:auto" id="curr-list"></div>
 
   <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bctoolt">Kuasai tools standar industri</h3>
@@ -390,7 +361,7 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
   <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bcflowt">Perjalanan belajar: dari pemula hingga bekerja</h3>
   <div class="grid g4 mt24">
     <div class="card"><span class="path-dot">1</span><b class="small mt8" style="display:block" data-i18n="bcf1t">Pre-Bootcamp</b><span class="badge badge-blue xs" data-i18n="bcf1w">Pendaftaran</span><p class="xs muted mt8" data-i18n="bcf1">Belajar mandiri lewat modul persiapan di LMS sebelum kelas dimulai.</p></div>
-    <div class="card"><span class="path-dot">2</span><b class="small mt8" style="display:block" data-i18n="bcf2t">Bootcamp</b><span class="badge badge-blue xs" data-i18n="bcf2w">24 Minggu</span><p class="xs muted mt8" data-i18n="bcf2">Live class, proyek & tugas menantang untuk membangun portofolio berkualitas.</p></div>
+    <div class="card"><span class="path-dot">2</span><b class="small mt8" style="display:block" data-i18n="bcf2t">Bootcamp</b><span class="badge badge-blue xs" data-i18n="bcf2w">Program inti</span><p class="xs muted mt8" data-i18n="bcf2">Live class, proyek & tugas menantang untuk membangun portofolio berkualitas.</p></div>
     <div class="card"><span class="path-dot">3</span><b class="small mt8" style="display:block" data-i18n="bcf3t">Post-Bootcamp</b><span class="badge badge-blue xs" data-i18n="bcf3w">2 Minggu</span><p class="xs muted mt8" data-i18n="bcf3">Finalisasi portofolio dan pembekalan strategi melamar kerja.</p></div>
     <div class="card"><span class="path-dot">4</span><b class="small mt8" style="display:block" data-i18n="bcf4t">Career Prep</b><span class="badge badge-blue xs" data-i18n="bcf4w">4 Minggu</span><p class="xs muted mt8" data-i18n="bcf4">Pendampingan intensif sampai kamu siap menghadapi interview kerja.</p></div>
   </div>
@@ -406,29 +377,29 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
 
   <h3 class="mt48" style="text-align:center;font-size:22px" data-i18n="bcport">Portofolio karya student TestCraft</h3>
   <div class="grid g2 mt24">
-    <div class="card hover"><div class="flex between"><b class="small">🛒 E-Commerce Automation Suite</b><span class="badge badge-green xs">Batch 3</span></div><p class="xs muted mt8" data-i18n="bcpo1">Framework Playwright + API testing untuk platform e-commerce — 240 test case, CI/CD penuh.</p><div class="xs mt8">Rina Handayani</div><button class="btn btn-outline btn-sm mt8" onclick="showToast('Portofolio — demo')" data-i18n="bcpob1">Lihat Portofolio</button></div>
-    <div class="card hover"><div class="flex between"><b class="small">🏦 API Test Framework for Fintech</b><span class="badge badge-green xs">Batch 2</span></div><p class="xs muted mt8" data-i18n="bcpo2">RestAssured + kontrak testing untuk layanan pembayaran — coverage 92%, laporan Allure.</p><div class="xs mt8">Yoga Pratama</div><button class="btn btn-outline btn-sm mt8" onclick="showToast('Portofolio — demo')" data-i18n="bcpob2">Lihat Portofolio</button></div>
+    <div class="card hover"><div class="flex between"><b class="small">🛒 E-Commerce Automation Suite</b><span class="badge badge-green xs">Batch 3</span></div><p class="xs muted mt8" data-i18n="bcpo1">Framework Playwright + API testing untuk platform e-commerce — 240 test case, CI/CD penuh.</p><div class="xs muted mt8">Rina Handayani · Alumni Batch 3</div></div>
+    <div class="card hover"><div class="flex between"><b class="small">🏦 API Test Framework for Fintech</b><span class="badge badge-green xs">Batch 2</span></div><p class="xs muted mt8" data-i18n="bcpo2">RestAssured + kontrak testing untuk layanan pembayaran — coverage 92%, laporan Allure.</p><div class="xs muted mt8">Yoga Pratama · Alumni Batch 2</div></div>
   </div>
 
   <h3 class="mt48" style="text-align:center;font-size:22px" id="biaya" data-i18n="bcpricet">Biaya Pendidikan</h3>
   <p class="section-sub" data-i18n="bcprices">Terjangkau untukmu, berharga untuk masa depanmu. Semua paket termasuk akses LMS seumur hidup, sertifikat QR-verified, dan layanan persiapan karier.</p>
   <div class="grid g3 mt24">
     <div class="card hover" style="text-align:center">
-      <span class="badge badge-green" data-i18n="bcpr1b">💰 Hemat 30%</span>
+      <span class="badge badge-green" data-i18n="bcpr1b">Hemat 30%</span>
       <h3 class="mt8" style="font-size:18px" data-i18n="bcpr1t">Full Payment</h3>
       <div class="stat-num" style="font-size:30px">Rp 8.500.000</div><s class="muted small">Rp 12.000.000</s>
       <p class="xs muted mt8" data-i18n="bcpr1">Sekali bayar — semua fasilitas bootcamp + gratis mengulang batch.</p>
       <a class="btn btn-primary btn-sm mt16" href="#kontak" data-i18n="bcprcta1">Daftar Sekarang</a>
     </div>
     <div class="card hover" style="text-align:center;border-color:var(--blue)">
-      <span class="badge badge-blue" data-i18n="bcpr2b">⭐ Paling Populer</span>
+      <span class="badge badge-blue" data-i18n="bcpr2b">Paling Populer</span>
       <h3 class="mt8" style="font-size:18px" data-i18n="bcpr2t">Cicilan 0%</h3>
       <div class="stat-num" style="font-size:30px">Rp 750.000</div><span class="muted small" data-i18n="bcpr2m">/bulan × 12 bulan</span>
       <p class="xs muted mt8" data-i18n="bcpr2">Cicilan tanpa bunga via Midtrans / Xendit — mulai belajar hari ini.</p>
       <a class="btn btn-primary btn-sm mt16" href="#kontak" data-i18n="bcprcta2">Ajukan Cicilan</a>
     </div>
     <div class="card hover" style="text-align:center">
-      <span class="badge badge-amber" data-i18n="bcpr3b">🏢 Untuk Tim</span>
+      <span class="badge badge-amber" data-i18n="bcpr3b">Untuk Tim</span>
       <h3 class="mt8" style="font-size:18px">Corporate / Group</h3>
       <div class="stat-num" style="font-size:30px" data-i18n="bcpr3p">Custom</div><span class="muted small" data-i18n="bcpr3m">min. 5 peserta</span>
       <p class="xs muted mt8" data-i18n="bcpr3">Kurikulum custom, dashboard progress tim, invoice perusahaan.</p>
@@ -438,9 +409,9 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
   <p class="xs muted mt16" style="text-align:center" data-i18n="bcnote">*Layanan persiapan karier mencakup konsultasi 1-on-1, review CV & LinkedIn, hingga latihan interview — tidak termasuk penyaluran/penempatan kerja.</p>
 
   <div class="card mt32" style="text-align:center;padding:32px">
-    <h3 style="font-size:20px" data-i18n="bcask">Mau tanya lebih lanjut? Boleh banget!</h3>
-    <p class="small muted mt8" data-i18n="bcaskd">Konsultasikan program belajar secara GRATIS dengan Tim Admission kami.</p>
-    <a class="btn wa-btn mt16" style="width:auto;display:inline-flex" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20konsultasi%20Bootcamp%20Quality%20Assurance!" target="_blank" data-i18n="bcaskb">💬 Konsultasi GRATIS di sini</a>
+    <h3 style="font-size:20px" data-i18n="bcask">Masih ada pertanyaan?</h3>
+    <p class="small muted mt8" data-i18n="bcaskd">Konsultasikan program belajar Anda secara gratis dengan tim Admission kami.</p>
+    <a class="btn wa-btn mt16" style="width:auto;display:inline-flex" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20konsultasi%20Bootcamp%20Quality%20Assurance!" target="_blank" data-i18n="bcaskb">Konsultasi gratis via WhatsApp</a>
   </div>
 </section>
 
@@ -498,32 +469,68 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
         <div class="flex"><span style="font-size:20px">💬</span><div><div class="xs" style="color:#94A3B8" data-i18n="ktl1">WhatsApp / Telepon</div><a href="https://wa.me/6282395568743" target="_blank"><b>+62 823-9556-8743</b></a></div></div>
         <div class="flex"><span style="font-size:20px">✉️</span><div><div class="xs" style="color:#94A3B8">Email</div><a href="mailto:testcraftindonesia@gmail.com"><b>testcraftindonesia@gmail.com</b></a></div></div>
         <div class="flex"><span style="font-size:20px">📍</span><div><div class="xs" style="color:#94A3B8">Office</div><b>Jakarta, Indonesia</b></div></div>
-        <div class="flex"><span style="font-size:20px">🎓</span><div><div class="xs" style="color:#94A3B8" data-i18n="ktl4">Sudah terdaftar?</div><a href="https://ariefrahakim.github.io/testcraft-lms/" target="_blank"><b data-i18n="ktl4a">Masuk ke LMS Portal ↗</b></a></div></div>
+        <div class="flex"><span style="font-size:20px">🎓</span><div><div class="xs" style="color:#94A3B8" data-i18n="ktl4">Sudah terdaftar?</div><a href="https://ariefrahakim.github.io/testcraft-lms/" target="_blank" rel="noopener"><b data-i18n="ktl4a">Masuk ke LMS Portal ↗</b></a></div></div>
+      </div>
+      <div class="mt32">
+        <div class="xs" style="color:#94A3B8;text-transform:uppercase;letter-spacing:.6px;font-weight:700" data-i18n="flowt">Alur pendaftaran</div>
+        <div class="mt16 small" style="color:#CBD5E1;display:flex;flex-direction:column;gap:10px">
+          <div class="flex" style="align-items:flex-start"><span class="path-dot" style="background:rgba(255,255,255,.15);color:#5EEAD4">1</span><span data-i18n="flow1">Isi formulir di samping — data langsung masuk ke tim Admission.</span></div>
+          <div class="flex" style="align-items:flex-start"><span class="path-dot" style="background:rgba(255,255,255,.15);color:#5EEAD4">2</span><span data-i18n="flow2">Tim kami menghubungi via WhatsApp dalam 1×24 jam kerja untuk konsultasi & jadwal batch.</span></div>
+          <div class="flex" style="align-items:flex-start"><span class="path-dot" style="background:rgba(255,255,255,.15);color:#5EEAD4">3</span><span data-i18n="flow3">Setelah pembayaran dikonfirmasi, akun LMS aktif dan Anda bisa mulai belajar.</span></div>
+        </div>
       </div>
     </div>
     <div class="register-form">
-      <h3 class="mb16" style="font-size:19px" data-i18n="ft">📝 Formulir Pendaftaran</h3>
-      <div id="form-fields">
-        <label data-i18n="fl1">Nama lengkap</label><input id="reg-name" placeholder="Nama Anda" data-i18n-ph="fl1p">
-        <label>Email</label><input id="reg-email" type="email" placeholder="anda@email.com">
-        <label data-i18n="fl3">No. WhatsApp</label><input id="reg-phone" placeholder="+62 8xx-xxxx-xxxx">
-        <label data-i18n="fl4">Jenis pendaftaran</label>
-        <select id="reg-type"><option data-i18n="o1">Individu — Public Training</option><option data-i18n="o2">Perusahaan — Corporate Training</option><option data-i18n="o3">Konsultasi / QA Consulting</option></select>
-        <label data-i18n="fl5">Program yang diminati</label>
-        <select id="reg-course"></select>
-        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm()" data-i18n="fsub">Kirim Pendaftaran</button>
-      </div>
-      <div id="form-success" style="display:none;text-align:center;padding:20px 0">
-        <div style="font-size:52px">✅</div>
+      <h3 class="mb16" style="font-size:19px" data-i18n="ft">Formulir Pendaftaran</h3>
+      <form id="reg-form" novalidate>
+        <div class="field">
+          <label for="reg-name" data-i18n="fl1">Nama lengkap <span class="req" aria-hidden="true">*</span></label>
+          <input id="reg-name" name="nama" autocomplete="name" required placeholder="Nama Anda" data-i18n-ph="fl1p" aria-describedby="err-name">
+          <div class="err-msg" id="err-name" data-i18n="er1">Mohon isi nama lengkap Anda.</div>
+        </div>
+        <div class="field">
+          <label for="reg-email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="reg-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="anda@email.com" aria-describedby="err-email">
+          <div class="err-msg" id="err-email" data-i18n="er2">Format email belum benar.</div>
+        </div>
+        <div class="field">
+          <label for="reg-phone" data-i18n="fl3">No. WhatsApp <span class="req" aria-hidden="true">*</span></label>
+          <input id="reg-phone" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" required placeholder="0812xxxxxxx" aria-describedby="err-phone hint-phone">
+          <div class="hint" id="hint-phone" data-i18n="fl3h">Nomor aktif WhatsApp, contoh: 081234567890</div>
+          <div class="err-msg" id="err-phone" data-i18n="er3">Nomor WhatsApp minimal 9 digit angka.</div>
+        </div>
+        <div class="field">
+          <label for="reg-type" data-i18n="fl4">Jenis pendaftaran</label>
+          <select id="reg-type" name="jenis"><option data-i18n="o1">Individu — Public Training</option><option data-i18n="o0">QA Bootcamp</option><option data-i18n="o2">Perusahaan — Corporate Training</option><option data-i18n="o3">Konsultasi / QA Consulting</option></select>
+        </div>
+        <div class="field">
+          <label for="reg-course" data-i18n="fl5">Program yang diminati</label>
+          <select id="reg-course" name="program"></select>
+        </div>
+        <div class="field">
+          <label for="reg-note" data-i18n="fl6">Catatan (opsional)</label>
+          <textarea id="reg-note" name="catatan" rows="2" placeholder="Pertanyaan atau jadwal yang diinginkan" data-i18n-ph="fl6p"></textarea>
+        </div>
+        <label class="consent" for="reg-consent">
+          <input type="checkbox" id="reg-consent" required>
+          <span data-i18n="fcons">Saya setuju data saya dihubungi tim TestCraft Indonesia sesuai <a href="privacy.html" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:underline">Kebijakan Privasi</a>.</span>
+        </label>
+        <div class="err-msg" id="err-consent" style="margin:-8px 0 12px" data-i18n="er4">Centang persetujuan untuk melanjutkan.</div>
+        <input class="hp" type="text" name="website" id="reg-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit" id="reg-submit" style="width:100%;justify-content:center" data-i18n="fsub">Kirim Pendaftaran</button>
+      </form>
+      <div id="form-success" style="display:none;text-align:center;padding:20px 0" role="status" aria-live="polite">
+        <div style="font-size:52px" aria-hidden="true">✅</div>
         <h3 class="mt8" data-i18n="fok">Pendaftaran Terkirim!</h3>
         <p class="small muted mt8" id="success-msg"></p>
-        <a class="btn wa-btn mt16" id="success-wa" href="#" target="_blank" data-i18n="fokwa">💬 Chat Sekarang di WhatsApp</a>
+        <a class="btn wa-btn mt16" id="success-wa" href="#" target="_blank" rel="noopener" data-i18n="fokwa">💬 Konfirmasi via WhatsApp</a>
       </div>
-      <div style="text-align:center;margin:10px 0" class="xs muted" data-i18n="for">— atau langsung chat kami —</div>
-      <a class="btn wa-btn" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20mendaftar%20kursus!" target="_blank">💬 WhatsApp +62 823-9556-8743</a>
+      <div style="text-align:center;margin:12px 0" class="xs muted" data-i18n="for">— atau langsung chat kami —</div>
+      <a class="btn wa-btn" href="https://wa.me/6282395568743?text=Halo%20TestCraft%20Indonesia,%20saya%20ingin%20mendaftar%20program%20training." target="_blank" rel="noopener">💬 WhatsApp +62 823-9556-8743</a>
     </div>
   </div>
 </section>
+</main>
 
 <footer><div class="container">
  <div class="grid g4">
@@ -536,8 +543,8 @@ html[data-theme="dark"] .client-badge img.inv{filter:invert(1)}
   <div><h4>Kontak & Legal</h4>
     <a href="https://wa.me/6282395568743" target="_blank">💬 +62 823-9556-8743</a>
     <a href="mailto:testcraftindonesia@gmail.com">✉️ testcraftindonesia@gmail.com</a>
-    <a href="#" onclick="showToast('Terms of Service — demo');return false">Terms of Service</a>
-    <a href="#" onclick="showToast('Privacy Policy — demo');return false">Privacy Policy</a></div>
+    <a href="terms.html" data-i18n="fo3a">Syarat &amp; Ketentuan</a>
+    <a href="privacy.html" data-i18n="fo3b">Kebijakan Privasi</a></div>
  </div>
  <div class="divider" style="background:#1E293B;margin-top:40px"></div>
  <div class="flex between wrap small" style="color:#64748B"><span>© 2026 TestCraft Indonesia. All rights reserved.</span><span>Learn. Build. Automate. 🇮🇩</span></div>
@@ -556,51 +563,53 @@ var GR=["linear-gradient(135deg,#16506B,#0E9C9C)","linear-gradient(135deg,#05966
 
 /* ===== detailed curriculum (bilingual) ===== */
 var CURR=[
- {t:["Fase 1 · Foundation of QA & Manual Testing","Phase 1 · Foundation of QA & Manual Testing"],w:["Minggu 1–4","Weeks 1–4"],items:[
-  ["Minggu 1: SDLC & STLC, peran QA di tim produk, quality mindset, 7 prinsip testing (ISTQB)","Week 1: SDLC & STLC, QA's role in a product team, quality mindset, the 7 testing principles (ISTQB)"],
-  ["Minggu 2: Teknik test design — Equivalence Partitioning, Boundary Value Analysis, decision table, state transition","Week 2: Test design techniques — Equivalence Partitioning, Boundary Value Analysis, decision tables, state transition"],
-  ["Minggu 3: Menulis test plan & test case, traceability matrix, severity vs priority, bug lifecycle & reporting di Jira","Week 3: Writing test plans & test cases, traceability matrix, severity vs priority, bug lifecycle & reporting in Jira"],
-  ["Minggu 4: Exploratory & usability testing, manajemen test di TestRail · Proyek: test plan + 50 test case aplikasi e-commerce","Week 4: Exploratory & usability testing, test management in TestRail · Project: test plan + 50 test cases for an e-commerce app"]]},
- {t:["Fase 2 · API & Database Testing","Phase 2 · API & Database Testing"],w:["Minggu 5–8","Weeks 5–8"],items:[
-  ["Minggu 5: Dasar HTTP — method, status code, header, JSON; anatomi REST API & dokumentasi OpenAPI","Week 5: HTTP fundamentals — methods, status codes, headers, JSON; REST API anatomy & OpenAPI docs"],
-  ["Minggu 6: Postman — collections, environments, variabel, pre-request & test scripts, mock server","Week 6: Postman — collections, environments, variables, pre-request & test scripts, mock servers"],
-  ["Minggu 7: SQL untuk QA — SELECT, JOIN, agregasi; validasi data backend dengan MySQL","Week 7: SQL for QA — SELECT, JOIN, aggregation; backend data validation with MySQL"],
-  ["Minggu 8: Newman CLI & automasi collection · Proyek: API test suite lengkap untuk layanan pembayaran","Week 8: Newman CLI & collection automation · Project: complete API test suite for a payment service"]]},
- {t:["Fase 3 · Web Automation (Playwright & Selenium)","Phase 3 · Web Automation (Playwright & Selenium)"],w:["Minggu 9–14","Weeks 9–14"],items:[
-  ["Minggu 9: Dasar JavaScript/TypeScript untuk automation — variabel, fungsi, async/await","Week 9: JavaScript/TypeScript basics for automation — variables, functions, async/await"],
-  ["Minggu 10: Playwright — setup, locator (getByRole/getByTestId), auto-waiting, web-first assertions","Week 10: Playwright — setup, locators (getByRole/getByTestId), auto-waiting, web-first assertions"],
-  ["Minggu 11: Page Object Model, fixtures, data-driven testing, autentikasi multi-role","Week 11: Page Object Model, fixtures, data-driven testing, multi-role authentication"],
-  ["Minggu 12: Selenium WebDriver + Java (IntelliJ IDEA) — locator, waits, TestNG; kapan memilih Selenium vs Playwright","Week 12: Selenium WebDriver + Java (IntelliJ IDEA) — locators, waits, TestNG; choosing Selenium vs Playwright"],
-  ["Minggu 13: Git & GitHub workflow — branching, pull request, code review untuk test code","Week 13: Git & GitHub workflow — branching, pull requests, code review for test code"],
-  ["Minggu 14: Reporting (HTML/Allure), cross-browser & parallel run · Proyek: framework E2E lengkap","Week 14: Reporting (HTML/Allure), cross-browser & parallel runs · Project: a complete E2E framework"]]},
- {t:["Fase 4 · Mobile Testing (Appium)","Phase 4 · Mobile Testing (Appium)"],w:["Minggu 15–18","Weeks 15–18"],items:[
-  ["Minggu 15: Arsitektur mobile testing, setup Appium 2 & driver, Appium Inspector","Week 15: Mobile testing architecture, Appium 2 & driver setup, Appium Inspector"],
-  ["Minggu 16: Strategi locator mobile, gesture (swipe, scroll, pinch), deep link","Week 16: Mobile locator strategies, gestures (swipe, scroll, pinch), deep links"],
-  ["Minggu 17: Hybrid app & webview, emulator vs real device, device cloud","Week 17: Hybrid apps & webviews, emulator vs real device, device clouds"],
-  ["Minggu 18: Eksekusi paralel antar device · Proyek: automasi aplikasi Android e-wallet","Week 18: Parallel execution across devices · Project: automating an Android e-wallet app"]]},
- {t:["Fase 5 · Performance Testing & CI/CD","Phase 5 · Performance Testing & CI/CD"],w:["Minggu 19–21","Weeks 19–21"],items:[
-  ["Minggu 19: Konsep load/stress/spike/soak testing; metrik: latency, throughput, error rate, percentile","Week 19: Load/stress/spike/soak testing concepts; metrics: latency, throughput, error rate, percentiles"],
-  ["Minggu 20: JMeter — thread group, correlation, assertion; k6 — scripting JS, scenarios, thresholds sebagai SLO","Week 20: JMeter — thread groups, correlation, assertions; k6 — JS scripting, scenarios, thresholds as SLOs"],
-  ["Minggu 21: Pipeline GitHub Actions, Docker untuk environment test, quality gates · Proyek: laporan performa API + pipeline CI","Week 21: GitHub Actions pipelines, Docker test environments, quality gates · Project: API performance report + CI pipeline"]]},
- {t:["Fase 6 · Capstone Project & Career Prep","Phase 6 · Capstone Project & Career Prep"],w:["Minggu 22–24","Weeks 22–24"],items:[
-  ["Minggu 22: Capstone — test strategy end-to-end aplikasi nyata: manual, API, web automation, mobile & performa","Week 22: Capstone — end-to-end test strategy on a real app: manual, API, web automation, mobile & performance"],
-  ["Minggu 23: Presentasi capstone & review portofolio, penulisan CV ATS-friendly & optimasi LinkedIn","Week 23: Capstone presentation & portfolio review, ATS-friendly CV writing & LinkedIn optimization"],
-  ["Minggu 24: Mock interview HR & teknikal, simulasi live test-design, tips negosiasi — sampai siap interview","Week 24: HR & technical mock interviews, live test-design simulation, negotiation tips — interview-ready"]]}
+ {t:["Fase 1 · Foundation of QA & Manual Testing","Phase 1 · Foundation of QA & Manual Testing"],items:[
+  ["SDLC & STLC, peran QA di tim produk, quality mindset, 7 prinsip testing (ISTQB)","SDLC & STLC, QA's role in a product team, quality mindset, the 7 testing principles (ISTQB)"],
+  ["Teknik test design — Equivalence Partitioning, Boundary Value Analysis, decision table, state transition","Test design techniques — Equivalence Partitioning, Boundary Value Analysis, decision tables, state transition"],
+  ["Menulis test plan & test case, traceability matrix, severity vs priority, bug lifecycle & reporting di Jira","Writing test plans & test cases, traceability matrix, severity vs priority, bug lifecycle & reporting in Jira"],
+  ["Exploratory & usability testing, manajemen test di TestRail · Proyek: test plan + 50 test case aplikasi e-commerce","Exploratory & usability testing, test management in TestRail · Project: test plan + 50 test cases for an e-commerce app"]]},
+ {t:["Fase 2 · API & Database Testing","Phase 2 · API & Database Testing"],items:[
+  ["Dasar HTTP — method, status code, header, JSON; anatomi REST API & dokumentasi OpenAPI","HTTP fundamentals — methods, status codes, headers, JSON; REST API anatomy & OpenAPI docs"],
+  ["Postman — collections, environments, variabel, pre-request & test scripts, mock server","Postman — collections, environments, variables, pre-request & test scripts, mock servers"],
+  ["SQL untuk QA — SELECT, JOIN, agregasi; validasi data backend dengan MySQL","SQL for QA — SELECT, JOIN, aggregation; backend data validation with MySQL"],
+  ["Newman CLI & automasi collection · Proyek: API test suite lengkap untuk layanan pembayaran","Newman CLI & collection automation · Project: complete API test suite for a payment service"]]},
+ {t:["Fase 3 · Web Automation (Playwright & Selenium)","Phase 3 · Web Automation (Playwright & Selenium)"],items:[
+  ["Dasar JavaScript/TypeScript untuk automation — variabel, fungsi, async/await","JavaScript/TypeScript basics for automation — variables, functions, async/await"],
+  ["Playwright — setup, locator (getByRole/getByTestId), auto-waiting, web-first assertions","Playwright — setup, locators (getByRole/getByTestId), auto-waiting, web-first assertions"],
+  ["Page Object Model, fixtures, data-driven testing, autentikasi multi-role","Page Object Model, fixtures, data-driven testing, multi-role authentication"],
+  ["Selenium WebDriver + Java (IntelliJ IDEA) — locator, waits, TestNG; kapan memilih Selenium vs Playwright","Selenium WebDriver + Java (IntelliJ IDEA) — locators, waits, TestNG; choosing Selenium vs Playwright"],
+  ["Git & GitHub workflow — branching, pull request, code review untuk test code","Git & GitHub workflow — branching, pull requests, code review for test code"],
+  ["Reporting (HTML/Allure), cross-browser & parallel run · Proyek: framework E2E lengkap","Reporting (HTML/Allure), cross-browser & parallel runs · Project: a complete E2E framework"]]},
+ {t:["Fase 4 · Mobile Testing (Appium)","Phase 4 · Mobile Testing (Appium)"],items:[
+  ["Arsitektur mobile testing, setup Appium 2 & driver, Appium Inspector","Mobile testing architecture, Appium 2 & driver setup, Appium Inspector"],
+  ["Strategi locator mobile, gesture (swipe, scroll, pinch), deep link","Mobile locator strategies, gestures (swipe, scroll, pinch), deep links"],
+  ["Hybrid app & webview, emulator vs real device, device cloud","Hybrid apps & webviews, emulator vs real device, device clouds"],
+  ["Eksekusi paralel antar device · Proyek: automasi aplikasi Android e-wallet","Parallel execution across devices · Project: automating an Android e-wallet app"]]},
+ {t:["Fase 5 · Performance Testing & CI/CD","Phase 5 · Performance Testing & CI/CD"],items:[
+  ["Konsep load/stress/spike/soak testing; metrik: latency, throughput, error rate, percentile","Load/stress/spike/soak testing concepts; metrics: latency, throughput, error rate, percentiles"],
+  ["JMeter — thread group, correlation, assertion; k6 — scripting JS, scenarios, thresholds sebagai SLO","JMeter — thread groups, correlation, assertions; k6 — JS scripting, scenarios, thresholds as SLOs"],
+  ["Pipeline GitHub Actions, Docker untuk environment test, quality gates · Proyek: laporan performa API + pipeline CI","GitHub Actions pipelines, Docker test environments, quality gates · Project: API performance report + CI pipeline"]]},
+ {t:["Fase 6 · Capstone Project & Career Prep","Phase 6 · Capstone Project & Career Prep"],items:[
+  ["Capstone — test strategy end-to-end aplikasi nyata: manual, API, web automation, mobile & performa","Capstone — end-to-end test strategy on a real app: manual, API, web automation, mobile & performance"],
+  ["Presentasi capstone & review portofolio, penulisan CV ATS-friendly & optimasi LinkedIn","Capstone presentation & portfolio review, ATS-friendly CV writing & LinkedIn optimization"],
+  ["Mock interview HR & teknikal, simulasi live test-design, tips negosiasi — sampai siap interview","HR & technical mock interviews, live test-design simulation, negotiation tips — interview-ready"]]}
 ];
 function renderCurriculum(){
  var L=CUR_LANG==="en"?1:0,el=document.getElementById("curr-list");
  if(!el)return;
  el.innerHTML=CURR.map(function(m,i){
-  return '<details class="curr-mod"'+(i===0?' open':'')+'><summary>'+m.t[L]+'<span class="muted xs">'+m.w[L]+'</span></summary>'
+  var n=m.items.length+(L?" topics":" topik");
+  return '<details class="curr-mod"'+(i===0?' open':'')+'><summary>'+m.t[L]+'<span class="muted xs">'+n+'</span></summary>'
    +m.items.map(function(it){return '<div class="curr-lesson"><span>📘 '+it[L]+'</span></div>'}).join("")+'</details>';
  }).join("");
 }
 
+function openLMS(){window.open("https://ariefrahakim.github.io/testcraft-lms/","_blank","noopener")}
 function renderPrograms(){
  document.getElementById("program-grid").innerHTML=PROGRAMS.map(function(p,i){
   var meta=CUR_LANG==="en"?p[2].replace(" jam"," hrs"):p[2];
   var btn=CUR_LANG==="en"?"Enroll":"Daftar";
-  return '<div class="course-card" onclick="window.open(\'testcraft-lms.html\',\'_blank\')">'
+  return '<div class="course-card" role="link" tabindex="0" onclick="openLMS()" onkeydown="if(event.key===\'Enter\')openLMS()">'
    +'<div class="thumb" style="background:'+GR[i]+'"><span>'+p[0]+'</span></div>'
    +'<div class="course-body"><span class="xs muted">'+meta+'</span><h3>'+p[1]+'</h3>'
    +'<div class="flex small"><span class="stars">★★★★★</span><b>'+p[5]+'</b></div>'
@@ -608,8 +617,16 @@ function renderPrograms(){
    +'<span class="btn btn-primary btn-sm">'+btn+'</span></div></div></div>';
  }).join("");
 }
-var courseSel=document.getElementById("reg-course");
-courseSel.innerHTML=PROGRAMS.map(function(p){return "<option>"+p[1]+"</option>"}).join("")+"<option>Program lainnya / belum tahu</option>";
+/* Opsi pertama sengaja netral & terpilih secara default: kalau peserta tidak
+   menyentuh dropdown ini (mis. pendaftar Corporate atau Konsultasi), data yang
+   masuk ke Sheets jujur "Belum ditentukan", bukan program pertama di daftar. */
+function renderCourseOptions(){
+  var en=CUR_LANG==="en",sel=document.getElementById("reg-course"),cur=sel.value;
+  sel.innerHTML='<option value="">'+(en?"Not decided yet":"Belum ditentukan")+'</option>'
+    +PROGRAMS.map(function(p){return "<option>"+p[1]+"</option>"}).join("")
+    +'<option>'+(en?"Other program":"Program lainnya")+'</option>';
+  if(cur)sel.value=cur;
+}
 
 function showToast(msg){
   var t=document.createElement("div");t.className="toast";t.textContent=msg;
@@ -623,28 +640,137 @@ function toggleTheme(){
   document.getElementById("theme-btn").textContent=next==="dark"?"☀️":"🌙";
 }
 (function(){var t=localStorage.getItem("tcw_theme")||"light";document.documentElement.dataset.theme=t;document.getElementById("theme-btn").textContent=t==="dark"?"☀️":"🌙"})();
-function submitForm(){
-  var n=document.getElementById("reg-name").value.trim();
-  var e=document.getElementById("reg-email").value.trim();
-  var p=document.getElementById("reg-phone").value.trim();
-  var ty=document.getElementById("reg-type").value;
-  var c=document.getElementById("reg-course").value;
-  if(!n||(!e&&!p)){showToast(CUR_LANG==="en"?"Please fill in your name and email/WhatsApp":"Mohon isi nama dan email/WhatsApp Anda");return}
-  document.getElementById("form-fields").style.display="none";
-  var box=document.getElementById("form-success");box.style.display="block";
-  document.getElementById("success-msg").innerHTML=CUR_LANG==="en"
-    ?"Thank you <b>"+n+"</b>! The TestCraft team will contact you via WhatsApp within 24 hours regarding <b>"+ty+"</b> — program <b>"+c+"</b>."
-    :"Terima kasih <b>"+n+"</b>! Tim TestCraft akan menghubungi Anda via WhatsApp dalam 1×24 jam mengenai <b>"+ty+"</b> — program <b>"+c+"</b>.";
-  document.getElementById("success-wa").href="https://wa.me/6282395568743?text="+encodeURIComponent("Halo TestCraft, saya "+n+", baru mendaftar ("+ty+") program "+c);
-  showToast(CUR_LANG==="en"?"✅ Registration sent!":"✅ Pendaftaran terkirim!");
+/* ===================================================================
+   PENDAFTARAN — ke mana data calon peserta dikirim?
+   -------------------------------------------------------------------
+   1. FORM_ENDPOINT  : penerima utama (inbox tim Admission).
+                       Isi salah satu, lalu pendaftaran otomatis masuk:
+                       · Formspree   -> https://formspree.io/f/xxxxxxxx
+                       · Google Form -> URL Apps Script Web App
+                       · Web3Forms   -> https://api.web3forms.com/submit
+                       Kosongkan ("") kalau belum punya — form tetap
+                       jalan lewat WhatsApp (fallback di bawah).
+   2. WhatsApp       : setelah submit, peserta diarahkan chat berisi
+                       ringkasan data ke nomor Admission (selalu aktif).
+   3. Email          : tautan cadangan bila WhatsApp tidak tersedia.
+   =================================================================== */
+var FORM_ENDPOINT="https://script.google.com/macros/s/AKfycbyGW2gZLlBP6fB7wV0ELbYT53ZUVzHgCZ6RVzNMTUmbFT6WdDEYDJOb3CV26hrnOz-A/exec";
+var ADMISSION_WA="6282395568743";
+var ADMISSION_EMAIL="testcraftindonesia@gmail.com";
+
+function setFieldError(inputId,on){
+  var el=document.getElementById(inputId);if(!el)return;
+  var f=el.closest(".field");if(f)f.classList.toggle("invalid",on);
+  el.setAttribute("aria-invalid",on?"true":"false");
 }
+function validateForm(v){
+  var ok=true,en=CUR_LANG==="en";
+  setFieldError("reg-name",false);setFieldError("reg-email",false);setFieldError("reg-phone",false);
+  if(v.nama.length<3){setFieldError("reg-name",true);ok=false}
+  if(!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v.email)){setFieldError("reg-email",true);ok=false}
+  if(v.whatsapp.replace(/\D/g,"").length<9){setFieldError("reg-phone",true);ok=false}
+  var cons=document.getElementById("reg-consent"),ce=document.getElementById("err-consent");
+  if(!cons.checked){ce.style.display="block";ok=false}else{ce.style.display="none"}
+  if(!ok)showToast(en?"Please check the highlighted fields":"Mohon periksa kembali isian yang ditandai");
+  return ok;
+}
+function waMessage(v){
+  var en=CUR_LANG==="en";
+  return (en?"Hello TestCraft Indonesia, I would like to register.":"Halo TestCraft Indonesia, saya ingin mendaftar.")
+    +"\n\n"+(en?"Name":"Nama")+": "+v.nama
+    +"\nEmail: "+v.email
+    +"\nWhatsApp: "+v.whatsapp
+    +"\n"+(en?"Type":"Jenis")+": "+v.jenis
+    +"\n"+(en?"Program":"Program")+": "+v.program
+    +(v.catatan?"\n"+(en?"Notes":"Catatan")+": "+v.catatan:"");
+}
+function submitForm(ev){
+  if(ev)ev.preventDefault();
+  var en=CUR_LANG==="en";
+  if(document.getElementById("reg-hp").value)return;   // honeypot: bot terdeteksi
+  var v={
+    nama:document.getElementById("reg-name").value.trim(),
+    email:document.getElementById("reg-email").value.trim(),
+    whatsapp:document.getElementById("reg-phone").value.trim(),
+    jenis:document.getElementById("reg-type").value,
+    program:document.getElementById("reg-course").value||(CUR_LANG==="en"?"Not decided yet":"Belum ditentukan"),
+    catatan:document.getElementById("reg-note").value.trim(),
+    sumber:"testcraft-compro/index.html",
+    bahasa:CUR_LANG
+  };
+  if(!validateForm(v))return;
+
+  var btn=document.getElementById("reg-submit"),label=btn.innerHTML;
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span>'+(en?"Sending…":"Mengirim…");
+
+  var waHref="https://wa.me/"+ADMISSION_WA+"?text="+encodeURIComponent(waMessage(v));
+  function done(delivered){
+    btn.disabled=false;btn.innerHTML=label;
+    document.getElementById("reg-form").style.display="none";
+    document.getElementById("form-success").style.display="block";
+    document.getElementById("success-msg").innerHTML=delivered
+      ?(en?"Thank you <b>"+v.nama+"</b>. Your registration has been received — our Admission team will contact you via WhatsApp within 1×24 working hours."
+          :"Terima kasih <b>"+v.nama+"</b>. Pendaftaran Anda sudah kami terima — tim Admission akan menghubungi via WhatsApp dalam 1×24 jam kerja.")
+      :(en?"Thank you <b>"+v.nama+"</b>. Please press the button below to send your details to our Admission team on WhatsApp — that confirms your registration."
+          :"Terima kasih <b>"+v.nama+"</b>. Silakan tekan tombol di bawah untuk mengirim data Anda ke tim Admission via WhatsApp — itu yang mengonfirmasi pendaftaran Anda.");
+    document.getElementById("success-wa").href=waHref;
+    showToast(en?"Registration sent":"Pendaftaran terkirim");
+  }
+
+  if(!FORM_ENDPOINT){
+    console.warn("[TestCraft] FORM_ENDPOINT masih kosong — pendaftaran TIDAK tersimpan "+
+                 "ke Google Sheets, hanya diteruskan ke WhatsApp. Lihat apps-script/README.md.");
+    done(false);return;
+  }
+  /* Google Apps Script tidak melayani preflight OPTIONS. Pakai text/plain
+     agar terhitung "simple request" — tanpa preflight. Layanan lain
+     (Formspree, Web3Forms) tetap dikirim sebagai JSON biasa. */
+  var isGAS=/script\.google\.com/.test(FORM_ENDPOINT);
+  fetch(FORM_ENDPOINT,{
+    method:"POST",
+    headers:isGAS?{"Content-Type":"text/plain;charset=utf-8"}
+                 :{"Content-Type":"application/json",Accept:"application/json"},
+    body:JSON.stringify(v)
+  }).then(function(r){done(r.ok)})
+    .catch(function(){done(false)});
+}
+document.getElementById("reg-form").addEventListener("submit",submitForm);
+["reg-name","reg-email","reg-phone"].forEach(function(id){
+  document.getElementById(id).addEventListener("input",function(){setFieldError(id,false)});
+});
+document.getElementById("reg-consent").addEventListener("change",function(){
+  if(this.checked)document.getElementById("err-consent").style.display="none";
+});
+
+/* mobile nav */
+function toggleNav(){
+  var d=document.getElementById("nav-drawer"),b=document.getElementById("nav-toggle");
+  var open=d.classList.toggle("open");
+  b.setAttribute("aria-expanded",open?"true":"false");
+  b.textContent=open?"✕":"☰";
+}
+document.getElementById("nav-drawer").addEventListener("click",function(e){
+  if(e.target.tagName==="A")toggleNav();
+});
 
 /* ============ i18n (ID default ↔ EN) ============ */
 var CUR_LANG=localStorage.getItem("tcw_lang")||"id";
 var EN={
  nav1:"Home",nav2:"Services",nav3:"Programs",nav4:"About Us",nav5:"Clients",nav7:"Contact",
+ navreg:"Register",skip:"Skip to main content",
+ fl3h:"An active WhatsApp number, e.g. 081234567890",
+ fl6:"Notes (optional)",fl6p:"Questions or preferred schedule",
+ fcons:"I agree to be contacted by the TestCraft Indonesia team in accordance with the <a href=\"privacy.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--blue);text-decoration:underline\">Privacy Policy</a>.",
+ er1:"Please enter your full name.",er2:"That email address doesn't look right.",
+ er3:"WhatsApp number must have at least 9 digits.",er4:"Please tick the consent box to continue.",
+ o0:"QA Bootcamp",
+ flowt:"How registration works",
+ flow1:"Fill in the form — your details go straight to our Admission team.",
+ flow2:"We contact you on WhatsApp within 1×24 working hours to discuss the program and batch schedule.",
+ flow3:"Once payment is confirmed, your LMS account is activated and you can start learning.",
+ fo3a:"Terms of Service",fo3b:"Privacy Policy",
  hdesc:"TestCraft Indonesia is an IT training company focused on Software Testing, QA Engineering, Test Automation, API & Performance Testing, AI for QA, and DevOps for Test Automation.",
- cta1:"🚀 View Programs",cta2:"💬 Free Consultation",trust:"⭐ 4.8/5 alumni rating",
+ cta1:"View Programs",cta2:"Free Consultation",trust:"⭐ 4.8/5 alumni rating",
  hc1:"Online & offline classes for individuals",hc2:"Upskill your company's QA team",hct3:"Certification",hc3:"ISTQB preparation & QR-verified certificates",hc4:"Test strategy & automation frameworks",
  st2:"Training Programs",st4:"Certificates Issued",
  svct:"Our Services",svcs:"Four service pillars to raise the quality of your engineers and organization.",
@@ -671,16 +797,16 @@ var EN={
  q6:"Is there career support?",a6:"We provide CV & LinkedIn reviews, 1-on-1 career consultations, and interview practice for alumni.",
  ktt:"Start Your QA Journey Today",ktd:"Fill in the registration form and our team will contact you via WhatsApp within 24 hours — for individual registration or corporate training quotes.",
  ktl1:"WhatsApp / Phone",ktl4:"Already registered?",ktl4a:"Go to LMS Portal ↗",
- ft:"📝 Registration Form",fl1:"Full name",fl1p:"Your name",fl3:"WhatsApp number",fl4:"Registration type",
+ ft:"Registration Form",fl1:"Full name",fl1p:"Your name",fl3:"WhatsApp number",fl4:"Registration type",
  o1:"Individual — Public Training",o2:"Company — Corporate Training",o3:"Consultation / QA Consulting",
  fl5:"Program of interest",fsub:"Submit Registration",for:"— or chat with us directly —",
- fok:"Registration Sent!",fokwa:"💬 Chat Now on WhatsApp",
+ fok:"Registration Sent!",fokwa:"💬 Confirm on WhatsApp",
  fo1:"Company",fo1a:"About Us",fo1b:"Services",fo1c:"Clients & Testimonials",fo1d:"Contact",
  fo2:"Learn",fo2a:"Featured Programs",fo2b:"Verify Certificate",fo2c:"Become an Instructor",
  fot:"Quality Software. Confident Delivery.<br>An IT training company for Software Testing & QA Engineering."
 ,
  nav8:"Bootcamp",
- bcbadge:"🎓 Flagship Program · Career Prep up to Interview",bctitle:"Quality Assurance Bootcamp — 24 Weeks",
+ bcbadge:"Flagship Program · Career Prep up to Interview",bctitle:"QA Bootcamp",
  bcsub:"An intensive zero-to-job-ready program: Manual Testing, API & Database Testing, Web & Mobile Automation, Performance Testing, and complete career preparation up to job-interview practice.",
  bcaudt:"Designed for every stage of your career",
  bca1t:"University Students",bca1:"Prepare your career early with industry-relevant skills.",
@@ -690,7 +816,7 @@ var EN={
  bcsalt:"QA Career Prospects & Salaries in Indonesia",
  bcpm1:"per month",bcpm2:"per month",bcpm3:"per month",bcpm4:"per month",bcpm5:"per month",
  bcu1:"Free Batch Retake",bcu2:"Career & Interview Preparation",bcu3:"Lifetime Material Access",bcu4:"Mentors from Unicorns",bcu5:"28,000+ Alumni Community",
- bccurt:"Bootcamp Curriculum — 24 Weeks",
+ bccurt:"QA Bootcamp Curriculum",
  bck1t:"Phase 1 · Foundation of QA & Manual Testing",bck1w:"Weeks 1–4",bck1:"SDLC & STLC, test case design, testing techniques (BVA, EP, decision tables), bug reporting, test management in Jira & TestRail, ISTQB basics.",
  bck2t:"Phase 2 · API & Database Testing",bck2w:"Weeks 5–8",bck2:"HTTP & REST, Postman collections & scripting, Newman CI, database validation with MySQL, contract testing basics.",
  bck3t:"Phase 3 · Web Automation",bck3w:"Weeks 9–14",bck3:"Selenium WebDriver & Playwright, locator strategy, Page Object Model, fixtures, Git & GitHub workflow, automated reporting.",
@@ -700,7 +826,7 @@ var EN={
  bctoolt:"Master industry-standard tools",
  bcflowt:"The learning journey: from beginner to employed",
  bcf1t:"Pre-Bootcamp",bcf1w:"Registration",bcf1:"Self-paced preparation modules in the LMS before classes start.",
- bcf2t:"Bootcamp",bcf2w:"24 Weeks",bcf2:"Live classes, challenging projects and assignments to build a high-quality portfolio.",
+ bcf2t:"Bootcamp",bcf2w:"Core program",bcf2:"Live classes, challenging projects and assignments to build a high-quality portfolio.",
  bcf3t:"Post-Bootcamp",bcf3w:"2 Weeks",bcf3:"Portfolio finalization and job-application strategy coaching.",
  bcf4t:"Career Prep",bcf4w:"4 Weeks",bcf4:"Intensive coaching until you are fully ready for job interviews.",
  bcjobt:"Career Preparation Services",
@@ -710,11 +836,11 @@ var EN={
  bcpo2:"RestAssured + contract testing for a payment service — 92% coverage, Allure reporting.",
  bcpob1:"View Portfolio",bcpob2:"View Portfolio",
  bcpricet:"Tuition Fees",bcprices:"Affordable for you, valuable for your future. All plans include lifetime LMS access, a QR-verified certificate, and career preparation services.",
- bcpr1b:"💰 Save 30%",bcpr1t:"Full Payment",bcpr1:"One-time payment — all bootcamp facilities + free batch retake.",bcprcta1:"Register Now",
- bcpr2b:"⭐ Most Popular",bcpr2t:"0% Installments",bcpr2m:"/month × 12 months",bcpr2:"Interest-free installments via Midtrans / Xendit — start learning today.",bcprcta2:"Apply for Installments",
- bcpr3b:"🏢 For Teams",bcpr3p:"Custom",bcpr3m:"min. 5 participants",bcpr3:"Custom curriculum, team progress dashboard, corporate invoicing.",bcprcta3:"Request a Quote",
+ bcpr1b:"Save 30%",bcpr1t:"Full Payment",bcpr1:"One-time payment — all bootcamp facilities + free batch retake.",bcprcta1:"Register Now",
+ bcpr2b:"Most Popular",bcpr2t:"0% Installments",bcpr2m:"/month × 12 months",bcpr2:"Interest-free installments via Midtrans / Xendit — start learning today.",bcprcta2:"Apply for Installments",
+ bcpr3b:"For Teams",bcpr3p:"Custom",bcpr3m:"min. 5 participants",bcpr3:"Custom curriculum, team progress dashboard, corporate invoicing.",bcprcta3:"Request a Quote",
  bcnote:"*Career preparation covers 1-on-1 consultation, CV & LinkedIn review, through interview practice — job placement is not included.",
- bcask:"Have more questions? Go ahead!",bcaskd:"Consult your learning program for FREE with our Admissions Team.",bcaskb:"💬 FREE Consultation here",
+ bcask:"Still have questions?",bcaskd:"Consult your learning plan free of charge with our Admissions team.",bcaskb:"Free consultation on WhatsApp",
  q7:"Are there requirements for the career preparation service?",a7:"Yes — graduate from the bootcamp with at least 90% attendance, complete the capstone project, and attend the career preparation sessions. Full details are shared during onboarding.",
  q8:"Do I need a laptop with special specs?",a8:"Nothing high-end: at least 8GB RAM and a 64-bit Windows/macOS/Linux OS is enough for all the tools taught (Playwright, Selenium, Postman, JMeter)."
 };
@@ -732,11 +858,72 @@ function applyLang(){
  document.documentElement.lang=CUR_LANG;
  renderPrograms();
  renderCurriculum();
+ renderCourseOptions();
 }
 document.addEventListener("click",function(e){var d=document.getElementById("lang-dd");if(d&&d.hasAttribute("open")&&!d.contains(e.target))d.removeAttribute("open")});
 function toggleLang(){CUR_LANG=CUR_LANG==="en"?"id":"en";localStorage.setItem("tcw_lang",CUR_LANG);applyLang();}
 function setLangSel(l){CUR_LANG=l;localStorage.setItem("tcw_lang",l);applyLang();var dd=document.getElementById("lang-dd");if(dd)dd.removeAttribute("open");}
 applyLang();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["Organization","EducationalOrganization"],
+      "@id":"https://ariefrahakim.github.io/testcraft-compro/#org",
+      "name":"TestCraft Indonesia",
+      "url":"https://ariefrahakim.github.io/testcraft-compro/",
+      "slogan":"Quality Software. Confident Delivery.",
+      "description":"Perusahaan pelatihan IT untuk Software Testing, QA Engineering, Test Automation, API & Performance Testing, dan AI for QA.",
+      "foundingDate":"2024",
+      "email":"testcraftindonesia@gmail.com",
+      "telephone":"+62-823-9556-8743",
+      "address":{"@type":"PostalAddress","addressLocality":"Jakarta","addressCountry":"ID"},
+      "areaServed":["ID","SG","MY"],
+      "contactPoint":[{
+        "@type":"ContactPoint",
+        "contactType":"admissions",
+        "telephone":"+62-823-9556-8743",
+        "email":"testcraftindonesia@gmail.com",
+        "availableLanguage":["id","en"]
+      }]
+    },
+    {
+      "@type":"Course",
+      "name":"QA Bootcamp",
+      "description":"Program intensif dari nol sampai siap kerja: Manual Testing, API & Database Testing, Web & Mobile Automation, Performance Testing, dan persiapan karier hingga latihan interview.",
+      "url":"https://ariefrahakim.github.io/testcraft-compro/#bootcamp",
+      "inLanguage":"id",
+      "provider":{"@id":"https://ariefrahakim.github.io/testcraft-compro/#org"},
+      "hasCourseInstance":{
+        "@type":"CourseInstance",
+        "courseMode":"blended"
+      },
+      "offers":{
+        "@type":"Offer",
+        "price":"8500000",
+        "priceCurrency":"IDR",
+        "category":"Full Payment",
+        "availability":"https://schema.org/InStock",
+        "url":"https://ariefrahakim.github.io/testcraft-compro/#biaya"
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Apakah saya bisa belajar dari nol tanpa background IT?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Learning path kami dirancang dari level pemula, mulai dari ISTQB Foundation dan Manual Testing, lalu bertahap ke automation."}},
+        {"@type":"Question","name":"Apakah sertifikat TestCraft diakui perusahaan?","acceptedAnswer":{"@type":"Answer","text":"Sertifikat kami dilengkapi QR verification sehingga keasliannya dapat diverifikasi langsung oleh perusahaan mana pun."}},
+        {"@type":"Question","name":"Bagaimana cara mengakses materi setelah mendaftar?","acceptedAnswer":{"@type":"Answer","text":"Setelah pembayaran dikonfirmasi, akun LMS langsung aktif. Semua video, quiz, tugas, forum, dan sertifikat diakses melalui LMS Portal dengan lifetime access."}},
+        {"@type":"Question","name":"Apakah ada program cicilan atau diskon?","acceptedAnswer":{"@type":"Answer","text":"Ya, tersedia cicilan 0% via Midtrans/Xendit, serta diskon khusus mahasiswa dan bundle learning path."}},
+        {"@type":"Question","name":"Bagaimana dengan pelatihan untuk perusahaan?","acceptedAnswer":{"@type":"Answer","text":"Paket Corporate mencakup dashboard admin, laporan progress karyawan, kurikulum custom, dan sesi live private."}},
+        {"@type":"Question","name":"Apakah ada career support?","acceptedAnswer":{"@type":"Answer","text":"Kami menyediakan review CV & LinkedIn, konsultasi karier 1-on-1, dan latihan interview untuk alumni."}},
+        {"@type":"Question","name":"Apakah perlu laptop dengan spesifikasi khusus?","acceptedAnswer":{"@type":"Answer","text":"Minimal RAM 8GB dan OS Windows/macOS/Linux 64-bit sudah cukup untuk semua tools yang diajarkan."}}
+      ]
+    }
+  ]
+}
 </script>
 </body>
 </html>
